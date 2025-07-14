@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const bgMusic = document.getElementById('bgMusic');
     try {
         bgMusic.volume = 0.3;
@@ -6,17 +6,6 @@
     } catch (e) {
         console.log("Audio error:", e);
     }
-
-    function updateViewCounter() {
-        let count = localStorage.getItem('pageViewCount');
-        count = count ? parseInt(count) + 1 : 1;
-        localStorage.setItem('pageViewCount', count);
-        const counterElement = document.getElementById('view-counter');
-        if (counterElement) {
-            counterElement.textContent = count.toLocaleString();
-        }
-    }
-    updateViewCounter();
 
     const DISCORD_ID = '1063195780212601012';
     const widget = document.getElementById('discord-widget');
