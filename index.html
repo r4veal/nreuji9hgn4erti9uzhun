@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryu / Ryuniiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="splash" id="splash">
+        <div class="splash-content">
+            <h1>Click to enter</h1>
+        </div>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <video loop id="bg-video">
+            <source src="assets/background.mp4" type="video/mp4">
+        </video>
+
+        <div class="sound-control">
+            <div class="volume-container">
+                <i class="fas fa-volume-up" id="sound-icon"></i>
+                <input type="range" min="0" max="1" step="0.01" value="1" id="volume-slider">
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <div class="avatar" id="discord-avatar"></div>
+                    <div class="status" id="discord-status"></div>
+                </div>
+                <div class="name-location">
+                    <h1>Ryu / Ryuniiz</h1>
+                    <div class="header-bio">
+                        <p>Focused on game cheats and web development</p>
+                    </div>
+                    <div class="location-social">
+                        <span class="location">Germany</span>
+                        <div class="social-links">
+                            <a href="https://steamcommunity.com/profiles/76561199804566818/" target="_blank" class="social-link">
+                                <i class="fab fa-steam"></i>
+                            </a>
+                            <a href="https://discord.com/users/1063195780212601012" target="_blank" class="social-link">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://www.instagram.com/r4veal.rl/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discord-widget">
+                <div class="discord-profile">
+                    <div class="discord-avatar-container">
+                        <img id="widget-avatar" src="" alt="Discord Avatar" class="discord-avatar">
+                        <div class="discord-status" id="widget-status"></div>
+                    </div>
+                    <div class="discord-info">
+                        <div class="discord-username" id="discord-username">Loading...</div>
+                        <div class="discord-activity" id="discord-activity">Status: Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
